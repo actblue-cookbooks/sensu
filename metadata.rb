@@ -12,12 +12,6 @@ depends "apt"
 # available @ https://supermarket.chef.io/cookbooks/yum
 depends "yum"
 
-# available @ https://supermarket.chef.io/cookbooks/windows
-depends "windows", ">= 1.8.8"
-
-# available @ https://supermarket.chef.io/cookbooks/ms_dotnet
-depends "ms_dotnet", ">= 2.6.1"
-
 # available @ https://supermarket.chef.io/cookbooks/rabbitmq
 depends "rabbitmq", ">= 2.0.0"
 
@@ -36,7 +30,6 @@ suggests "chef-vault", ">= 1.3.1"
   scientific
   oracle
   amazon
-  windows
 ].each do |os|
   supports os
 end
