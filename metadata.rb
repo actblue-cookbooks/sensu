@@ -12,9 +12,6 @@ depends "apt"
 # available @ http://supermarket.chef.io/cookbooks/yum
 depends "yum"
 
-# available @ http://supermarket.chef.io/cookbooks/windows
-depends "windows", ">= 1.8.8"
-
 # available @ http://supermarket.chef.io/cookbooks/rabbitmq
 depends "rabbitmq", ">= 2.0.0"
 
@@ -31,7 +28,6 @@ suggests "chef-vault", ">= 1.3.1"
   redhat
   fedora
   amazon
-  windows
 ].each do |os|
   supports os
 end
