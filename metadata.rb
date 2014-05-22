@@ -12,14 +12,11 @@ depends "apt"
 # available @ http://community.opscode.com/cookbooks/yum
 depends "yum"
 
-# available @ http://community.opscode.com/cookbooks/windows
-depends "windows", ">= 1.8.8"
-
 # available @ http://community.opscode.com/cookbooks/rabbitmq
 depends "rabbitmq", ">= 2.0.0"
 
-# available @ http://community.opscode.com/cookbooks/redisio
-depends "redisio", ">= 1.7.0"
+# using our custom package install here
+depends "redis2"
 
 %w[
   ubuntu
@@ -28,7 +25,6 @@ depends "redisio", ">= 1.7.0"
   redhat
   fedora
   amazon
-  windows
 ].each do |os|
   supports os
 end
