@@ -15,8 +15,8 @@ depends "yum"
 # available @ http://supermarket.chef.io/cookbooks/rabbitmq
 depends "rabbitmq", ">= 2.0.0"
 
-# available @ http://supermarket.chef.io/cookbooks/redisio
-depends "redisio", ">= 1.7.0"
+# available @ https://github.com/actblue-cookbooks/redis-ats
+depends "redis-ats"
 
 # available @ https://supermarket.chef.io/cookbooks/chef-vault
 suggests "chef-vault", ">= 1.3.1"
